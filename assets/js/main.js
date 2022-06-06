@@ -213,8 +213,112 @@ button1.forEach((n) => {
             }else{
                 v.classList.remove("txtSelected")
                 v.classList.add("txtDefault")
-
             }
         })
     })
+})
+
+const text2 = document.querySelectorAll(".selectedText1 div");
+
+const button2 = document.querySelectorAll(".sBtn1");
+
+button2.forEach((n) => {
+    n.addEventListener("click", function () {
+        let btn = document.querySelector(".btnClick");
+        btn.classList.remove("btnClick");
+        let id = this.getAttribute("id");
+        text2.forEach((v) => {
+            let dId = v.getAttribute("data-id");
+            if (id == dId) {
+                this.classList.add("btnClick");
+                console.log(this);
+                v.classList.remove("txtDefault");
+                v.classList.add("txtSelected")
+            }else{
+                v.classList.remove("txtSelected")
+                v.classList.add("txtDefault")
+            }
+        })
+    })
+})
+
+// tabs-end
+
+// pagination-start
+
+const pages = document.querySelectorAll(".page-link");
+
+pages.forEach((n) => {
+    n.addEventListener("click", function (e) {
+        e.preventDefault();
+        let btn = document.querySelector(".page-active");
+        btn.classList.remove("page-active");
+        this.classList.add("page-active")
+        console.log(this);
+    })
+})
+
+const pages1 = document.querySelectorAll(".page-link1");
+
+pages1.forEach((n) => {
+    n.addEventListener("click", function (e) {
+        e.preventDefault();
+        let btn = document.querySelector(".page-active1");
+        btn.classList.remove("page-active1");
+        this.classList.add("page-active1");
+        console.log(this);
+    })
+})
+
+// pagination-end
+
+// navigation pills
+
+const pills = document.querySelectorAll(".navPill");
+
+pills.forEach((n) => {
+    n.addEventListener("click", function (e) {
+        e.preventDefault();
+        let btn = document.querySelector(".navPill-active");
+        btn.classList.remove("navPill-active");
+        this.classList.add("navPill-active");
+        console.log(this);
+    })
+})
+
+// navigation pills
+
+// Alerts - start
+
+const successAlert = document.querySelector(".successAlert");
+const closeBtn = document.querySelector(".closeBtn");
+
+closeBtn.addEventListener("click", function () {
+    successAlert.classList.add("alertClosed");
+})
+
+const infoAlert = document.querySelector(".infoAlert");
+const closeBtn1 = document.querySelector(".closeBtn1");
+
+closeBtn1.addEventListener("click", function () {
+    infoAlert.classList.add("alertClosed");
+})
+
+const warningAlert = document.querySelector(".warningAlert");
+const closeBtn2 = document.querySelector(".closeBtn2");
+
+closeBtn2.addEventListener("click", function () {
+    warningAlert.classList.add("alertClosed");
+})
+
+const dangerAlert = document.querySelector(".dangerAlert");
+const closeBtn3 = document.querySelector(".closeBtn3");
+
+closeBtn3.addEventListener("click", function () {
+    dangerAlert.classList.add("alertClosed");
+})
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
 })

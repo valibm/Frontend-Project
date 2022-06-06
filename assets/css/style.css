@@ -529,9 +529,31 @@ header .logoLarge {
   color: white;
 }
 
+.imagesDiv {
+  margin-bottom: 3rem;
+  position: relative;
+  top: 25rem;
+  z-index: 5;
+}
+
+.imagesDiv img {
+  width: 100%;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 4px;
+}
+
+.imagesDiv img:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
 footer {
   background: #f4f5f7;
   padding: 3rem 0;
+  -webkit-clip-path: polygon(100% 10%, 100% 100%, 0% 100%, 0 40%);
+          clip-path: polygon(100% 10%, 100% 100%, 0% 100%, 0 40%);
 }
 
 footer .footerSec .footerHeader {
@@ -891,6 +913,524 @@ main .navbarSec .tabs .selectedText .txtDefault {
 
 main .navbarSec .tabs .selectedText .txtSelected {
   display: block;
+}
+
+main .navbarSec .tabs .selectedText1 {
+  padding: 1.5rem;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 1rem;
+}
+
+main .navbarSec .tabs .selectedText1 .sText1 {
+  color: #525f7f;
+}
+
+main .navbarSec .tabs .selectedText1 .sText2 {
+  color: #525f7f;
+}
+
+main .navbarSec .tabs .selectedText1 .sText3 {
+  color: #525f7f;
+}
+
+main .navbarSec .tabs .selectedText1 .txtDefault {
+  display: none;
+}
+
+main .navbarSec .tabs .selectedText1 .txtSelected {
+  display: block;
+}
+
+main .navbarSec .progressBars h3 {
+  color: #2dce89;
+  margin-top: 4rem;
+}
+
+main .navbarSec .progressBars small {
+  color: #525f7f;
+}
+
+main .navbarSec .progressBars .barUp .barText {
+  color: #5e72e4;
+  font-size: .625rem;
+  font-weight: 600;
+  background: rgba(94, 114, 228, 0.1);
+  padding: 0.25rem 1rem;
+  border-radius: 30px;
+}
+
+main .navbarSec .progressBars .barUp .barPercent {
+  color: #8898aa;
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+main .navbarSec .progressBars .pagination a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50% !important;
+  width: 36px;
+  height: 36px;
+  font-size: .875rem;
+  margin: 0 3px;
+}
+
+main .navbarSec .progressBars .pagination .page-link {
+  color: #8898aa;
+}
+
+main .navbarSec .progressBars .pagination .page-active {
+  color: white;
+  background-color: #5e72e4;
+  border: none;
+}
+
+main .navbarSec .progressBars .pagination .page-link1 {
+  color: #8898aa;
+}
+
+main .navbarSec .progressBars .pagination .page-active1 {
+  color: white;
+  background-color: #5e72e4;
+  border: none;
+}
+
+main .navbarSec .navigationPills h3 {
+  color: #2dce89;
+  margin-top: 4rem;
+}
+
+main .navbarSec .navigationPills small {
+  color: #525f7f;
+}
+
+main .navbarSec .navigationPills .navPill {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #5e72e4;
+}
+
+main .navbarSec .navigationPills .navPill:hover {
+  cursor: pointer;
+}
+
+main .navbarSec .navigationPills .navPill-active {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #5e72e4;
+  color: white;
+}
+
+main .navbarSec .navigationPills .navPill-active:hover {
+  cursor: pointer;
+}
+
+main .navbarSec .navigationPills .badgePrimary {
+  color: #2643e9;
+  background-color: rgba(203, 210, 246, 0.5);
+  border-radius: 10rem;
+  padding: 0.35rem 0.375rem;
+  font-size: 66%;
+  font-weight: 600;
+  line-height: 1;
+}
+
+main .navbarSec .navigationPills .badgeSuccess {
+  color: #1aae6f;
+  background-color: rgba(147, 231, 195, 0.5);
+  padding: 0.35rem 0.375rem;
+  font-size: 66%;
+  font-weight: 600;
+  border-radius: 10rem;
+}
+
+main .navbarSec .navigationPills .badgeDanger {
+  color: #f80031;
+  background-color: rgba(251, 175, 190, 0.5);
+  border-radius: 10rem;
+  padding: 0.35rem 0.375rem;
+  font-size: 66%;
+  font-weight: 600;
+}
+
+main .navbarSec .navigationPills .badgeWarning {
+  color: #ff3709;
+  background-color: rgba(254, 201, 189, 0.5);
+  padding: 0.35rem 0.375rem;
+  font-size: 66%;
+  font-weight: 600;
+  border-radius: 10rem;
+}
+
+main .navbarSec .navigationPills .badgeInfo {
+  color: #03acca;
+  background-color: rgba(136, 230, 247, 0.5);
+  padding: 0.35rem 0.375rem;
+  font-size: 66%;
+  font-weight: 600;
+  border-radius: 10rem;
+}
+
+main .alertsSec {
+  padding-top: 4rem;
+}
+
+main .alertsSec .secHeadTxt {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+main .alertsSec .alertClosed {
+  display: none !important;
+}
+
+main .alertsSec .successAlert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 1.5rem;
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #4fd69c;
+}
+
+main .alertsSec .successAlert p {
+  color: white;
+  margin-bottom: 0;
+}
+
+main .alertsSec .successAlert p span {
+  font-weight: bolder;
+}
+
+main .alertsSec .successAlert .closeBtn {
+  color: white;
+  opacity: 0.6;
+}
+
+main .alertsSec .successAlert .closeBtn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+main .alertsSec .infoAlert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 1.5rem;
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #37d5f2;
+}
+
+main .alertsSec .infoAlert p {
+  color: white;
+  margin-bottom: 0;
+}
+
+main .alertsSec .infoAlert p span {
+  font-weight: bolder;
+}
+
+main .alertsSec .infoAlert .closeBtn1 {
+  color: white;
+  opacity: 0.6;
+}
+
+main .alertsSec .infoAlert .closeBtn1:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+main .alertsSec .warningAlert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 1.5rem;
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #fb6340;
+}
+
+main .alertsSec .warningAlert p {
+  color: white;
+  margin-bottom: 0;
+}
+
+main .alertsSec .warningAlert p span {
+  font-weight: bolder;
+}
+
+main .alertsSec .warningAlert .closeBtn2 {
+  color: white;
+  opacity: 0.6;
+}
+
+main .alertsSec .warningAlert .closeBtn2:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+main .alertsSec .dangerAlert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 1.5rem;
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #f5365c;
+}
+
+main .alertsSec .dangerAlert p {
+  color: white;
+  margin-bottom: 0;
+}
+
+main .alertsSec .dangerAlert p span {
+  font-weight: bolder;
+}
+
+main .alertsSec .dangerAlert .closeBtn3 {
+  color: white;
+  opacity: 0.6;
+}
+
+main .alertsSec .dangerAlert .closeBtn3:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+main .imageSec {
+  padding-top: 4rem;
+}
+
+main .imageSec .secHeadTxt {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+main .imageSec small {
+  color: #525f7f;
+}
+
+main .imageSec img {
+  width: 150px;
+}
+
+main .imageSec .firstImg {
+  -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+          box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+  border-radius: 0.25rem;
+}
+
+main .imageSec .secondImg {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+          box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+}
+
+main .imageSec .thirdImg {
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  border-radius: 0.25rem;
+}
+
+main .imageSec .forthImg {
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  border-radius: 50%;
+}
+
+main .jsComponentsSec {
+  padding-top: 4rem;
+}
+
+main .jsComponentsSec .secHeadTxt {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+main .jsComponentsSec h3 {
+  color: #2dce89;
+  margin-top: 4rem;
+}
+
+main .jsComponentsSec small {
+  color: #525f7f;
+}
+
+main .carouselSec {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(150deg, #7795f8 15%, #6772e5 70%, #555abf 94%);
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+}
+
+main .carouselSec .carouselDiv {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+main .carouselSec .carouselDiv h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main .carouselSec .carouselDiv p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: white;
+}
+
+main .carouselSec .carouselDiv a {
+  background-color: white;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main .carouselSec .myCarousel {
+  -webkit-transform: rotateX(-20deg) rotateY(-10deg);
+          transform: rotateX(-20deg) rotateY(-10deg);
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main .carouselSec .myCarousel img {
+  border-radius: 5px;
+}
+
+main .formsSec {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(150deg, #7795f8 15%, #6772e5 70%, #555abf 94%);
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+}
+
+main .formsSec .formsSecInner {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+main .formsSec .formsSecInner .firstH2 {
+  font-weight: 600;
+}
+
+main .formsSec .formsSecInner h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main .formsSec .formsSecInner p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: white;
+}
+
+main .formsSec .formsSecInner a {
+  background-color: white;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main .formsSec .formsSecInner .logBtn {
+  background-color: #2dce89;
+  color: white;
+}
+
+main .formsSec .formsSecInner .loginCard {
+  -webkit-transform: rotateX(-20deg) rotateY(-10deg);
+          transform: rotateX(-20deg) rotateY(-10deg);
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main .endingSec {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+main .endingSec .endingDiv h2 {
+  color: #32325d;
+  font-size: 2.1875rem;
+  font-weight: 600;
+}
+
+main .endingSec .endingDiv span {
+  font-weight: 300;
+  color: #2dce89;
+  font-size: 2.1875rem;
+}
+
+main .endingSec .endingDiv p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #525f7f;
+}
+
+main .endingSec .endingDiv a {
+  color: #fff;
+  background-color: #5e72e4;
+  font-weight: 600;
 }
 
 #flexSwitchCheckDefault {
