@@ -288,45 +288,361 @@
                     </div>
                 </div>
                 <div class="checkDiv container">
-                    <div class="row justify-content-center align-items-center">
+                    <div class="row justify-content-center">
                         <div class="col-lg-3 col-md-6">
                             <div class="mb-3 mt-5"><small class="text-uppercase fw-600 sizeTxt">checkboxes</small></div>
                             <div class="checkboxes">
-                                <div>
+                                <div class="mb-3">
                                     <input type="checkbox" id="checkbox1">
                                     <label for="checkbox1">Unchecked</label>
                                 </div>
-                                <div>
-                                    <input type="checkbox" id="checkbox2">
+                                <div class="mb-3">
+                                    <input type="checkbox" checked id="checkbox2">
                                     <label for="checkbox2">Checked</label>
                                 </div>
-                                <div>
-                                    <input type="checkbox" id="checkbox3">
+                                <div class="mb-3">
+                                    <input disabled type="checkbox" id="checkbox3">
                                     <label for="checkbox3">Disabled Unchecked</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" id="checkbox4">
-                                    <label for="checkbox4">D</label>
+                                    <input disabled checked type="checkbox" id="checkbox4">
+                                    <label for="checkbox4">Disabled Checked</label>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="mb-3 mt-5"><small class="text-uppercase fw-600 sizeTxt">radios</small></div>
                             <div class="radios">
-
+                                <div class="mb-3">
+                                    <input type="radio" id="radio1">
+                                    <label for="radio1">Unchecked</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="radio" checked id="radio2">
+                                    <label for="radio2">Checked</label>
+                                </div>
+                                <div class="mb-3">
+                                    <input disabled type="radio" id="radio3">
+                                    <label for="radio3">Disabled Unchecked</label>
+                                </div>
+                                <div>
+                                    <input disabled checked type="radio" id="radio4">
+                                    <label for="radio4">Disabled Checked</label>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="mb-3 mt-5"><small class="text-uppercase fw-600 sizeTxt">toggle buttons</small>
                             </div>
+                            <div class="toggleButtons">
+                                <div class="form-check form-switch mb-3">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="mb-3 mt-5"><small class="text-uppercase fw-600 sizeTxt">sliders</small></div>
+                            <div class="sliders">
+                                <div class="mb-3">
+                                    <input type="range" id="volume" name="volume" min="0" max="11">
+                                </div>
+                                <div>
+                                    <input type="range" id="volume" name="volume" min="0" max="11">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menus">
+                <div class="container">
+                    <h3 class="">Menu</h3>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-6">
+                            <div class="mb-3 mt-4"><small class="text-uppercase fw-600 sizeTxt">With Text</small></div>
+                            <nav class="navbar navbar-expand-lg navbar-light navBg-primary menu1">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">Menu</a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-current="page" href="">Discover</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">Profile</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">Settings</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-4 mt-4"><small class="text-uppercase fw-600 sizeTxt">With Icons</small></div>
+                            <nav class="navbar navbar-expand-lg navbar-light navBg-success menu2">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">Menu</a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-current="page" href=""><i
+                                                        class="fa-solid fa-heart"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href=""><i class="fa-solid fa-bullhorn"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href=""><i class="fa-solid fa-gear"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="navbarSec">
+            <div class="container">
+                <p class="secHeadTxt mb-5">Navbars</p>
+            </div>
+            <div class="navbars">
+                <div class="mb-4">
+                    <nav class="navbar navbar-expand-lg navbar-light navBg-default nav1 py-4">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">Default Color</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href=""><i
+                                                class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-solid fa-bullhorn"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-solid fa-gear"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="mb-4">
+                    <nav class="navbar navbar-expand-lg navbar-light navBg-primary nav1 py-4">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">Primary Color</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="">Discover</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Settings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="mb-4">
+                    <nav class="navbar navbar-expand-lg navbar-light navBg-success nav1 py-4">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">Success Color</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href=""><i
+                                                class="fa-solid fa-heart"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-solid fa-bullhorn"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-solid fa-gear"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="mb-4">
+                    <nav class="navbar navbar-expand-lg navbar-light navBg-danger nav1 py-4">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">Danger Color</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href=""><i
+                                                class="fa-brands fa-facebook-square"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="mb-4">
+                    <nav class="navbar navbar-expand-lg navbar-light navBg-warning nav1 py-4">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">Warning Color</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href=""><i
+                                                class="fa-brands fa-facebook-square"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="mb-4">
+                    <nav class="navbar navbar-expand-lg navbar-light navBg-info nav1 py-4">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">Info Color</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href=""><i
+                                                class="fa-brands fa-facebook-square"></i> Facebook</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-brands fa-twitter"></i> Twitter</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href=""><i class="fa-brands fa-instagram"> Instagram</i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="container">
+                    <h3 class="mb-5">Tabs</h3>
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-5">
+                            <div class="mb-3"><small class="text-uppercase fw-600 sizeTxt">With Icon</small></div>
+                            <div class="selectors d-flex justify-content-between">
+                                <button id="1" class="btn btnDefault sBtn btnClick"><i class="fa-solid fa-cloud-arrow-up"></i> Home</button>
+                                <button id="2" class="btn btnDefault sBtn"><i class="fa-solid fa-bell"></i> Profile</button>
+                                <button id="3" class="btn btnDefault sBtn"><i class="fa-solid fa-calendar-days"></i> Messages</button>
+                            </div>
+                            <div class="selectedText">
+                                <div data-id="1" class="sText1">
+                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                                        stumptown aliqua, retro synth master cleanse. Mustache cliche tempor,
+                                        williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
+                                        dreamcatcher synth.</p>
+                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                                        stumptown aliqua, retro synth master cleanse.</p>
+                                </div>
+                                <div data-id="2" class="sText2 txtDefault">
+                                    <p>Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                                </div>
+                                <div data-id="3" class="sText3 txtDefault">
+                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="mb-3"><small class="text-uppercase fw-600 sizeTxt">With Text</small></div>
+                            <div class="selectors d-flex justify-content-between">
+                                <button id="1" class="btn btnDefault sBtn btnClick"><i class="fa-solid fa-cloud-arrow-up"></i> Home</button>
+                                <button id="2" class="btn btnDefault sBtn"><i class="fa-solid fa-bell"></i> Profile</button>
+                                <button id="3" class="btn btnDefault sBtn"><i class="fa-solid fa-calendar-days"></i> Messages</button>
+                            </div>
+                            <div class="selectedText">
+                                <div data-id="1" class="sText1">
+                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                                        stumptown aliqua, retro synth master cleanse. Mustache cliche tempor,
+                                        williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
+                                        dreamcatcher synth.</p>
+                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                                        stumptown aliqua, retro synth master cleanse.</p>
+                                </div>
+                                <div data-id="2" class="sText2 txtDefault">
+                                    <p>Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                                </div>
+                                <div data-id="3" class="sText3 txtDefault">
+                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
     <footer>
         <section class="footerSec">

@@ -773,6 +773,136 @@ main .basicElements .inputs .altFormControls .altInput {
           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+main .basicElements .inputs .checkboxes input {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+main .basicElements .inputs .radios input {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #11cdef;
+}
+
+main .basicElements .menus h3 {
+  color: #2dce89;
+  margin-top: 4rem;
+}
+
+main .basicElements .menus small {
+  color: #525f7f;
+}
+
+main .basicElements .menus .menu1 {
+  border-radius: 5px;
+}
+
+main .basicElements .menus .menu1 a {
+  color: white;
+}
+
+main .basicElements .menus .menu1 a:hover {
+  color: white;
+  opacity: 0.6;
+}
+
+main .basicElements .menus .menu2 {
+  border-radius: 5px;
+}
+
+main .basicElements .menus .menu2 a {
+  color: white;
+}
+
+main .basicElements .menus .menu2 a:hover {
+  color: white;
+  opacity: 0.6;
+}
+
+main .navbarSec {
+  padding-top: 4rem;
+}
+
+main .navbarSec .secHeadTxt {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+main .navbarSec .navbars .nav1 {
+  border-radius: 5px;
+}
+
+main .navbarSec .navbars .nav1 a {
+  color: white;
+}
+
+main .navbarSec .navbars .nav1 a:hover {
+  color: white;
+  opacity: 0.6;
+}
+
+main .navbarSec .tabs h3 {
+  color: #2dce89;
+  margin-top: 4rem;
+}
+
+main .navbarSec .tabs small {
+  color: #525f7f;
+}
+
+main .navbarSec .tabs .selectors .btnDefault {
+  background-color: white;
+  color: #5e72e4;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.75rem 2rem;
+}
+
+main .navbarSec .tabs .selectors .btnClick {
+  background-color: #5e72e4;
+  color: white;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.75rem 2rem;
+}
+
+main .navbarSec .tabs .selectedText {
+  padding: 1.5rem;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 1rem;
+}
+
+main .navbarSec .tabs .selectedText .sText1 {
+  color: #525f7f;
+}
+
+main .navbarSec .tabs .selectedText .sText2 {
+  color: #525f7f;
+}
+
+main .navbarSec .tabs .selectedText .sText3 {
+  color: #525f7f;
+}
+
+main .navbarSec .tabs .selectedText .txtDefault {
+  display: none;
+}
+
+main .navbarSec .tabs .selectedText .txtSelected {
+  display: block;
+}
+
+#flexSwitchCheckDefault {
+  width: 3rem;
+  height: 1.5rem;
+}
+
+#flexSwitchCheckChecked {
+  width: 3rem;
+  height: 1.5rem;
+}
+
 .addonStyles {
   background-color: white;
   color: #adb5bd;
@@ -784,6 +914,30 @@ main .basicElements .inputs .altFormControls .altInput {
 
 .inputBorder-right {
   border-right: none;
+}
+
+.navBg-primary {
+  background-color: #5e72e4;
+}
+
+.navBg-success {
+  background-color: #2dce89;
+}
+
+.navBg-warning {
+  background-color: #fb6340;
+}
+
+.navBg-danger {
+  background-color: #f5365c;
+}
+
+.navBg-default {
+  background-color: #172b4d;
+}
+
+.navBg-info {
+  background-color: #11cdef;
 }
 
 .btnBg-primary {
