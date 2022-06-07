@@ -514,29 +514,34 @@ header {
     }
 }
 
-.imagesDiv{
+.imagesDiv {
     margin-bottom: 3rem;
     position: relative;
     top: 25rem;
     z-index: 5;
-    img{
+
+    img {
         width: 100%;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 4px;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
             transform: translateY(-15px);
         }
     }
 }
 
+.footerClip{
+    clip-path: polygon(100% 10%, 100% 100%, 0% 100%, 0 40%);
+}
+
 footer {
     background: #f4f5f7;
     padding: 3rem 0;
-    clip-path: polygon(100% 10%, 100% 100%, 0% 100%, 0 40%);
 
     .footerSec {
-        
+
         .footerHeader {
             border-bottom: 1px solid rgba(0, 0, 0, .1);
 
@@ -1242,8 +1247,116 @@ main {
         small {
             color: #525f7f;
         }
-    }
 
+        .myModal {
+            h5 {
+                color: #32325d;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            .modalBtn {
+                background-color: #5e72e4;
+                width: 100%;
+                font-weight: 600;
+            }
+
+            .modalClose {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 300;
+                color: #525f7f;
+            }
+
+            .saveChng {
+                background-color: #5e72e4;
+                font-weight: 600;
+            }
+
+            .mCloseBtn {
+                background-color: transparent;
+                border: none;
+                color: #5e72e4;
+                font-weight: 600;
+            }
+        }
+
+        .myModal1 {
+            .modalBtn1 {
+                background-color: #fb6340;
+                width: 100%;
+                font-weight: 600;
+                border-color: #fb6340;
+            }
+            h5 {
+                color: white;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+            
+            .modalBell{
+                font-size: 3em;
+            }
+
+            .modalTxtHeader{
+                font-weight: 400;
+                margin-top: 1.5rem;
+            }
+
+            .saveChng1 {
+                background-color: white;
+                color: black;
+                font-weight: 600;
+                border: none;
+            }
+
+            .mCloseBtn1 {
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-weight: 600;
+            }
+            
+            .modal-header{
+                border-bottom: 1px solid rgba(255,255,255,.075);
+            }
+            .modal-footer{
+                border-top: 1px solid rgba(255,255,255,.075);
+            }
+        }
+        .myModal2{
+            .modalBtn2 {
+                background-color: #172b4d;
+                width: 100%;
+                font-weight: 600;
+                border-color: #172b4d;
+            }
+        }
+        .tooltipsDiv{
+            .tooltips{
+                button{
+                    background-color: #5e72e4;
+                    color: white;
+                    border: none;
+                    font-weight: 600;
+                    font-size: .75rem;
+                }
+            }
+
+            .popovers{
+                button{
+                    background-color: #172b4d;
+                    color: white;
+                    border: none;
+                    font-weight: 600;
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
     .carouselSec {
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -1365,10 +1478,20 @@ main {
                 color: #fff;
                 background-color: #5e72e4;
                 font-weight: 600;
-                
+
+            }
+        }
+        .endingBottom{
+            img{
+                width: 100%;
             }
         }
     }
+}
+
+.modalBg{
+    background: linear-gradient(87deg,#f5365c 0,#f56036 100%)!important;
+    color: white;
 }
 
 #flexSwitchCheckDefault {
@@ -1521,6 +1644,10 @@ main {
     &:hover {
         color: #5e72e4;
     }
+}
+
+.container{
+    padding: 0 100px;
 }
 
 .text-color-success {
