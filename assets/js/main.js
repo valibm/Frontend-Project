@@ -231,13 +231,13 @@ const button2 = document.querySelectorAll(".sBtn1");
 
 button2.forEach((n) => {
     n.addEventListener("click", function () {
-        let btn = document.querySelector(".btnClick");
-        btn.classList.remove("btnClick");
+        let btn = document.querySelector(".btnClick1");
+        btn.classList.remove("btnClick1");
         let id = this.getAttribute("id");
         text2.forEach((v) => {
             let dId = v.getAttribute("data-id");
             if (id == dId) {
-                this.classList.add("btnClick");
+                this.classList.add("btnClick1");
                 console.log(this);
                 v.classList.remove("txtDefault");
                 v.classList.add("txtSelected")

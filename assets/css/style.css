@@ -891,6 +891,14 @@ main .navbarSec .tabs .selectors .btnClick {
   padding: 0.75rem 2rem;
 }
 
+main .navbarSec .tabs .selectors .btnClick1 {
+  background-color: #5e72e4;
+  color: white;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.75rem 2rem;
+}
+
 main .navbarSec .tabs .selectedText {
   padding: 1.5rem;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
